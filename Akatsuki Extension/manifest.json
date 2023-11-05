@@ -1,0 +1,16 @@
+{
+  "manifest_version": 2,
+  "name": "URL Checker",
+  "version": "1.0",
+  "permissions": ["activeTab", "http://ffa3-35-221-24-41.ngrok-free.app/*"],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["contentScript.js"]
+    }
+  ],
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_title": "Toggle URL Checker"
+  }
+}

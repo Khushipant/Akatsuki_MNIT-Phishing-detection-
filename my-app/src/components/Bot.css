@@ -1,0 +1,116 @@
+/* Chatbot Container Styles */
+.chat-app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: transparent; /* Background color for the chat app */
+
+}
+
+.cont {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff; /* Background color for the chat container */
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+}
+
+/* Chat Container Styles */
+.chat-container {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  overflow-y: auto;
+  min-height: 500px;
+  width:800px;
+  border-radius: 50px;
+}
+
+/* Message Styles */
+.message {
+  display: flex;
+  justify-content: flex-start; /* Adjust as needed for user or bot messages */
+  margin: 5px;
+}
+
+/* Chat Bubble Styles */
+.chat-bubble {
+  max-width: 70%;
+  padding: 10px;
+  margin: 5px;
+  background-color: #e8e8e8; /* Background color for chat bubbles */
+  border-radius: 10px;
+  word-wrap: break-word;
+}
+
+.user .chat-bubble {
+  background-color: #0074e1; /* Background color for user's chat bubbles */
+  color: #fff; /* Text color for user's chat bubbles */
+}
+
+.bot .chat-bubble {
+  background-color: #e8e8e8; /* Background color for bot's chat bubbles */
+  color: #000; /* Text color for bot's chat bubbles */
+}
+
+/* Gif Styles */
+.gif {
+  max-width: 100%;
+}
+
+/* Input and Button Styles */
+.inp-button {
+  display: flex;
+  padding: 10px;
+}
+
+.custom-field {
+  flex-grow: 1;
+  position: relative;
+  margin-right: 10px;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  background-color: #f0f0f0; /* Input background color */
+  border-radius: 5px;
+}
+
+input:focus {
+  outline: none; /* Remove focus outline */
+}
+
+.placeholder {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  color: #999;
+  transition: all 0.2s ease;
+  pointer-events: none;
+}
+
+input:valid + .placeholder {
+  font-size: 12px;
+  transform: translateY(-100%);
+  color: #777;
+}
+
+.send-button {
+  background-color: #0074e1; /* Send button background color */
+  color: #fff; /* Text color for the send button */
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.send-button:hover {
+  background-color: #0059a6; /* Hover background color for the send button */
+}
+

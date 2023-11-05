@@ -1,0 +1,39 @@
+/* Add CSS styles for the Navbar component */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px; /* Add more spacing on top, right, and left */
+  background-color: rgba(51, 51, 51, 0.5); /* Increased transparency */
+  border-radius: 25px; /* Rounded border */
+  color: #fff; /* Change the text color as needed */
+  height: 50px; /* Adjust the height as needed */
+  width: 1000px; /* Adjust the width as needed */
+  margin: 0 auto; /* Center the Navbar with equal spacing on right and left */
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px; /* Add space between Home and Help links */
+}
+
+.nav-links li {
+  margin: 0;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #fff; /* Change link color as needed */
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+}
+
